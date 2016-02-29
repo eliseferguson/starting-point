@@ -1,0 +1,37 @@
+@import "compass";
+@import "singularitygs";
+@import "import/normalize";
+@import "import/base";
+@import "import/flexbox";
+
+// Base styles
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	@include font-size(16);
+}
+
+a {
+	
+	&:visited {
+		
+	}
+	&:hover, &:focus {
+		
+	}
+	&:active, .current {
+		color: $purple;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+}
+h1 {  }
+h2 {  }
+h3 {  }
+h4 { }
+h5 { }
+h6 { }

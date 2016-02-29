@@ -1,0 +1,51 @@
+// box layout model for all elements
+* {
+	@include box-sizing(border-box);
+}
+
+// Web Safe Fonts
+$font-arial: Arial, Helvetica, sans-serif;
+$font-arial-black: "Arial Black", Gadget, sans-serif;
+$font-courier: "Courier New", Courier, Monospace;
+$font-georgia: Georgia, serif;
+$font-lucida-console: "Lucida Console", Monaco, monospace;
+$font-lucida-sans: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+$font-tahoma: Tahoma, Geneva, sans-serif;
+$font-times: "Times New Roman", Times, serif;
+$font-trebuchet: "Trebuchet MS", Tahoma, Arial, sans-serif;
+$font-verdana: Verdana, Geneva, sans-serif;
+$font-helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-baskerville: Baskerville, Palatino, "Palatino Linotype", Georgia, Serif;
+
+.printElement {
+	display: none;
+}
+
+.offscreen {
+	text-indent: -9999em;
+	padding: 0;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	display: block;
+	overflow: hidden;
+	list-style: none;
+	br {
+		display:none;
+	}
+}
+
+.clearfix {
+	&:before {
+		content: "";
+		display: table;
+	}
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+td img {
+max-width: none; // max-width breaks the design when images reside within table cells (try max-width: 100% and see)
+}
