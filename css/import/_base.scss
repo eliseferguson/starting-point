@@ -34,17 +34,6 @@ $font-baskerville: Baskerville, Palatino, "Palatino Linotype", Georgia, Serif;
 	}
 }
 
-.clearfix {
-	&:before {
-		content: "";
-		display: table;
-	}
-	&:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
-}
 
 td img {
 max-width: none; // max-width breaks the design when images reside within table cells (try max-width: 100% and see)
