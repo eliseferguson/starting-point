@@ -1,5 +1,5 @@
 @import "compass";
-/*@import "singularitygs";*/
+@import "singularitygs";
 @import "import/normalize";
 @import "import/base";
 @import "import/extends";
@@ -8,11 +8,11 @@
 // Base styles
 
 html {
-	font-size: 62.5%;
+	
 }
 
 body {
-	@include font-size(16);
+	@include font-size(12);
 }
 
 a {
@@ -24,7 +24,7 @@ a {
 		
 	}
 	&:active, .current {
-		color: $purple;
+		
 	}
 }
 
@@ -36,3 +36,30 @@ h3 {  }
 h4 { }
 h5 { }
 h6 { }
+
+.container-page {
+	
+}
+.container-item {
+	width: 100%;
+}
+	.container-brand {  
+		background: #f90;
+	}
+	.container-cta {  
+		background: #f0f;
+	}
+	.container-navigation { 
+		background: #00f;
+		.navigation {  }
+	}
+	.container-content { 
+		background: #0f0;
+		.content {  }
+	}
+	.container-sidebar {  
+		background: #ccc;
+	}
+	.container-footer {  
+		background: #999;
+	}
